@@ -1,19 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Tajawal } from "next/font/google";
 import "./globals.css";
 import QueryProvider from "@/src/providers/QueryProvider";
 import { Toaster } from "react-hot-toast";
 import Navbar from "@/src/components/layout/Navbar";
 import Footer from "@/src/components/layout/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const tajawal = Tajawal({
+  subsets: ["arabic", "latin"], 
+  weight: ["200", "300", "400", "500", "700", "800", "900"], 
+  variable: "--font-tajawal", 
 });
 
 export const metadata: Metadata = {
@@ -29,11 +25,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className= "h-full antialiased"
     >
-      <body className="min-h-full flex flex-col">
+      <body className={`${tajawal.variable} font-sans min-h-full flex flex-col`}>
       <QueryProvider>
-          {/* لو مش صفحة Auth، أظهر الـ Navbar */}
          <Navbar />
           
           <main className="flex-grow">

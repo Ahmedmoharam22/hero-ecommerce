@@ -15,6 +15,9 @@ const config = {
           DEFAULT: "#4f46e5", // Indigo-600
         },
       },
+      fontFamily: {
+        sans: ["var(--font-tajawal)", "ui-sans-serif", "system-ui"],
+      },
       borderRadius: {
         lg: "0.75rem", // Rounded Corners أكتر بتدي طابع مودرن
       },

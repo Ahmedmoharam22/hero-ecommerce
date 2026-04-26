@@ -9,5 +9,15 @@ export const productService = {
   async getProductDetails(id: string) {
     const { data } = await axiosInstance.get(`/api/v1/products/${id}`);
     return data.data;
+  },
+
+  async getCategories() {
+    const { data } = await axiosInstance.get("/api/v1/categories");
+    return data.data;
+  },
+  
+  async getBrands() {
+    const { data } = await axiosInstance.get("/api/v1/brands");
+    return data.data;
   }
 };
