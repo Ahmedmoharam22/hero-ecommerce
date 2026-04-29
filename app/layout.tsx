@@ -13,8 +13,8 @@ const tajawal = Tajawal({
 });
 
 export const metadata: Metadata = {
-  title: "Ecommerce Hero",
-  description: "Ecommerce Hero",
+  title: "APEXSTORE",
+  description: "APEXSTORE",
 };
 
 export default function RootLayout({
@@ -23,10 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className= "h-full antialiased"
-    >
+    <html lang="en" className="h-full antialiased">
       <body className={`${tajawal.variable} font-sans min-h-full flex flex-col`}>
       <QueryProvider>
          <Navbar />
@@ -35,7 +32,6 @@ export default function RootLayout({
             {children}
           </main>
           
-          {/* لو مش صفحة Auth، أظهر الـ Footer */}
            <Footer />
           
           <Toaster position="top-center" />

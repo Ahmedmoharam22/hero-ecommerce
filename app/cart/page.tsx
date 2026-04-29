@@ -49,7 +49,7 @@ export default function CartPage() {
     <div className="container mx-auto px-4 py-12">
       <div className="flex items-center justify-between mb-10">
         <h1 className="text-3xl font-black text-slate-900 tracking-tight">Shopping Cart</h1>
-        <span className="text-slate-500 font-medium">{cart.length} Items</span>
+        <span className="text-slate-500 bg-slate-200 px-4 py-2 rounded-full font-medium">{cart.length} Items</span>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
@@ -77,7 +77,7 @@ export default function CartPage() {
                   <Button 
                     variant="ghost" 
                     size="icon" 
-                    className="text-slate-300 hover:text-red-500 hover:bg-red-50 transition-colors rounded-full"
+                    className="text-slate-300 cursor-pointer hover:text-red-500 hover:bg-red-50 transition-colors rounded-full"
                     onClick={() => handleRemoveItem(item.id, item.title)}
                   >
                     <Trash2 size={20} />
@@ -90,7 +90,7 @@ export default function CartPage() {
                     <Button 
                       variant="ghost" 
                       size="icon" 
-                      className="h-8 w-8 text-slate-600 hover:text-indigo-600"
+                      className="h-8 w-8 text-slate-600 hover:text-indigo-600 cursor-pointer"
                       onClick={() => updateQuantity(item.id, 'minus')}
                       disabled={item.quantity <= 1}
                     >
@@ -104,7 +104,7 @@ export default function CartPage() {
                     <Button 
                       variant="ghost" 
                       size="icon" 
-                      className="h-8 w-8 text-slate-600 hover:text-indigo-600"
+                      className="h-8 w-8 text-slate-600 hover:text-indigo-600 cursor-pointer"
                       onClick={() => updateQuantity(item.id, 'plus')}
                     >
                       <Plus size={14} strokeWidth={3} />
@@ -122,7 +122,7 @@ export default function CartPage() {
           <div className="flex justify-start pt-4">
             <Button 
               variant="outline" 
-              className="text-slate-500 hover:text-red-600 border-dashed"
+              className="text-slate-500 hover:text-red-600 border-dashed cursor-pointer"
               onClick={handleClearCart}
             >
               Clear Entire Cart
@@ -162,7 +162,7 @@ export default function CartPage() {
               </div>
             </div>
 
-            <Button className="w-full h-14 bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-lg rounded-2xl gap-3 shadow-lg shadow-indigo-200 transition-all hover:scale-[1.02] active:scale-95">
+            <Button className="w-full cursor-pointer h-14 bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-lg rounded-2xl gap-3 shadow-lg shadow-indigo-200 transition-all hover:scale-[1.02] active:scale-95">
               Proceed to Checkout <ArrowRight size={20} />
             </Button>
             
