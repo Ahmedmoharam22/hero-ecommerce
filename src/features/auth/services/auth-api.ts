@@ -12,3 +12,16 @@ export const authService = {
     return response.data;
   }
 };
+
+
+export const api = {
+  async register(userData: any) {
+    const { data } = await axiosInstance.post(`/api/v1/auth/signup`, userData);
+    return data;
+  },
+  
+  async login(credentials: any) {
+    const { data } = await axiosInstance.post(`/api/v1/auth/signin`, credentials);
+    return data;
+  }
+};

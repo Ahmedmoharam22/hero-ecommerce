@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Phone, Mail, Globe2, X, GitBranchPlus } from "lucide-react";
+import { Logo } from "../ui/logo";
 const footerLinks = {
   shop: [
     { name: "All Products", href: "/products" },
@@ -28,7 +29,7 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="space-y-4">
             <Link href="/" className="text-xl font-bold tracking-tight text-slate-900">
-              HERO<span className="text-indigo-600">STORE</span>
+           <Logo showText />
             </Link>
             <p className="text-sm text-slate-500 max-w-xs">
               Experience the future of shopping with our curated collection of premium products. Quality and style, delivered to your door.
