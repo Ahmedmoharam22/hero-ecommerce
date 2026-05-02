@@ -1,6 +1,6 @@
-# 🛒 HeroStore - Modern E-Commerce Platform
+# 🛒 APEXSTORE - Modern E-Commerce Platform
 
-HeroStore is a high-performance E-commerce frontend built with **Next.js 15**, **React 19**, and **TypeScript**. It features a seamless user experience with real-time state management and a polished UI.
+APEXSTORE is a high-performance E-commerce frontend built with **Next.js 15**, **React 19**, and **TypeScript**. It features a seamless user experience with real-time state management and a polished UI.
 
 ## ✨ Features
 
@@ -27,6 +27,9 @@ HeroStore is a high-performance E-commerce frontend built with **Next.js 15**, *
 1. **Clone the repository:**
    ```bash
    git clone [https://github.com/Ahmedmoharam22/hero-store.git](https://github.com/Ahmedmoharam22/hero-store.git)
+
+2. **Live Demo:**
+   [https://hero-ecommerce.vercel.app/](https://hero-ecommerce.vercel.app/)
 
 
 
