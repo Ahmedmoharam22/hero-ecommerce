@@ -35,6 +35,7 @@ APEXSTORE is a high-performance E-commerce frontend built with **Next.js 15**, *
 
 
 
+
 📂 Project Structure
 src/app: Application routes and pages.
 
