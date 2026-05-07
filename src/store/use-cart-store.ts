@@ -27,11 +27,7 @@ export const useCartStore = create<CartState>()(
                 const existingItem = currentCart.find((item) => item.id === product.id);
 
                 if (existingItem) {
-                    // لو المنتج موجود، زود الكمية بس
-                    const updatedCart = currentCart.map((item) =>
-                        item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
-                    );
-                    set({ cart: updatedCart });
+                    // If product already in cart, just increment quantity
                     set({
                         cart: currentCart.map((item) =>
                             item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item

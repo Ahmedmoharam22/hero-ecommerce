@@ -14,7 +14,6 @@ export function ProductCard({ product }: { product: any }) {
   const addToCart = useCartStore((state) => state.addToCart);
   const { toggleWishlist, isInWishlist } = useWishlistStore();
   const isFavorite = isInWishlist(product.id);
-
   const handleWishlist = (e: React.MouseEvent) => {
     e.preventDefault(); 
     toggleWishlist(product);  
@@ -75,7 +74,7 @@ export function ProductCard({ product }: { product: any }) {
         toast.success(`${product.title.slice(0, 20)}... added to cart!`);
       }}
     >
-      <ShoppingCart size={16} /> Add to Cart
+      <ShoppingCart className="cursor-pointer" size={16} /> Add to Cart
     </Button>
         </CardFooter>
       </Card>
